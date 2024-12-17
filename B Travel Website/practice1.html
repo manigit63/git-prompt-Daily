@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automatic Image Slider</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      .slider {
+        width: 100%;
+        overflow: hidden;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+      }
+
+      .slider-track {
+        border: 2px solid black;
+        width: 100vw;
+        height: 92vh;
+        display: flex;
+        /* width: calc(100% * 5); */
+        animation: slide 10s infinite linear;
+      }
+
+      .slide {
+        flex: 0 0 100%;
+      }
+
+      .slide img {
+        width: 100%;
+        
+
+      }
+
+      @keyframes slide {
+        0% {
+          transform: translateX(0);
+        }
+        20% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-100%);
+        }
+        45% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(-200%);
+        }
+        70% {
+          transform: translateX(-200%);
+        }
+        75% {
+          transform: translateX(-300%);
+        }
+        95% {
+          transform: translateX(-300%);
+        }
+        100% {
+          transform: translateX(-400%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slider-track">
+        <div class="slide">
+          <img src="./img/slide1.jpg" alt="Image 1" />
+        </div>
+        <div class="slide">
+          <img src="./img/slide2.jpg" alt="Image 2" />
+        </div>
+        <!-- <div class="slide">
+          <img src="./img/slide3.jpg" alt="Image 3" />
+        </div>
+        <div class="slide">
+          <img src="./img/slide4.jpg" alt="Image 4" />
+        </div>
+        <div class="slide">
+          <img src="./img/slide6.jpg" alt="Image 5" />
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>

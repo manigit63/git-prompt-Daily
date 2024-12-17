@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+
+    <style>
+      /* Header */
+      .header {
+        height: 95vh;
+        background: url(../img/slide6.jpg) center/cover no-repeat;
+        position: relative;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Navbar */
+      .navbar {
+        /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+        padding: 0 5%;
+
+        border: 2px solid red;
+      }
+
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar .logo {
+        font-size: 2.5rem;
+        cursor: pointer;
+      }
+
+      .nav-items {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .nav-item a {
+        font-size: 1.6rem;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0.5rem 0;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s;
+      }
+
+      .nav-item a:hover {
+        border-color: white;
+      }
+
+      /* Header Content */
+      .header-content {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: 80%;
+      }
+
+      .header-content h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .header-content p {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+      }
+
+      .header-content .btn {
+        padding: 0.8rem 2rem;
+        border-radius: 50px;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+      }
+
+      /* Cards */
+      /* Cards */
+      .card {
+        width: 14rem; /* Reduced from 18rem */
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .card-img {
+        width: 100%;
+        height: 10rem; /* Reduced from 12rem */
+        overflow: hidden;
+      }
+
+      .card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 0.8rem; /* Adjusted padding */
+        text-align: center;
+      }
+
+      .location-name {
+        font-size: 1.6rem; /* Slightly reduced */
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      .budget {
+        font-size: 1.2rem; /* Slightly reduced */
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <h1 class="logo lg-heading">WT</h1>
+          <ul class="nav-items">
+            <li class="nav-item"><a href="./index.html">Home</a></li>
+            <li class="nav-item"><a href="./about.html">About</a></li>
+            <li class="nav-item"><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header-content">
+        <h1 class="md-heading">World Travel</h1>
+        <p>
+          Travel the world, experience the greatness. It's the best gift given
+          by nature.
+        </p>
+        <a href="#explore-places" class="btn btn-primary text-red md-heading"
+          >Explore Places</a
+        >
+      </div>
+
+      <!-- Cards Section -->
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-img">
+            <img src="./img/showcase-photo1.jpg" alt="Beach" />
+          </div>
+          <div class="card-content">
+            <h3 class="location-name">International</h3>
+            <p class="budget">Budget: INR 15k</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-img">
+            <img src="./img/travel-image2.jpg" alt="Mountain" />
+          </div>
+          <div class="card-content">
+            <h3 class="location-name">National</h3>
+            <p class="budget">Budget: INR 15k</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-img">
+            <img src="./img/header-image2.jpg" alt="Cityscape" />
+          </div>
+          <div class="card-content">
+            <h3 class="location-name">Local</h3>
+            <p class="budget">Budget: INR 15k</p>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

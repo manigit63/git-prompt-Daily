@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location Cards</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        /* border: 2PX solid RED; */
+        width: 200px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .card-image {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+
+      .location-name {
+        font-size: 1.25rem;
+        color: #333;
+        margin: 0 0 10px;
+      }
+
+      .budget {
+        font-size: 1rem;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="./img/showcase-photo1.jpg" alt="Beach" class="card-image" />
+        <div class="card-content">
+          <h3 class="location-name">Sunny Beach</h3>
+          <p class="budget">Budget: INR 15k</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="./img/travel-image3.jpg" alt="Mountain" class="card-image" />
+        <div class="card-content">
+          <h3 class="location-name">Mountain Retreat</h3>
+          <p class="budget">Budget: INR 15k</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="./img/header-image.jpg" alt="Cityscape" class="card-image" />
+        <div class="card-content">
+          <h3 class="location-name">City Getaway</h3>
+          <p class="budget">Budget: INR 15k</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
